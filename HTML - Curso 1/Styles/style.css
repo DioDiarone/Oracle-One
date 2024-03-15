@@ -24,6 +24,7 @@ body {
 
 .cabecalho{
     padding: 2% 0% 0% 15%;
+
 }
 
 .cabecalho__menu{
@@ -44,10 +45,11 @@ body {
 }
 
 .home{
-    padding: 8% 15%;
+    padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .home__sobre{
@@ -80,12 +82,11 @@ body {
 .home__links__redes{
     font-family: "Krona One", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 
 .home__links__buttom{
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     gap: 16px;
@@ -111,12 +112,33 @@ body {
 }
 
 .rodape{
-    padding: 25px;
+    padding: 24px;
     color: var(--cor-terciaria);
     background-color: var(--cor-secundaria);
     text-align: center;
     font-family: var(--fonte-texto);
     font-size: 1.5rem;
     font-weight: 400px;
-    width: 100%;
+}
+
+@media (max-width: 1200px){
+    .home{
+        flex-direction: column-reverse;
+    }
+
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .rodape{
+        flex-direction: center;
+    }
+
+    .home__sobre{
+        width: auto;
+    }
 }
